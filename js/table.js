@@ -26,6 +26,7 @@ function getAdjustedDate(date, weeks) {
     const today = new Date();
     const scheduleBody = document.getElementById('schedule-body');
     const data = [
+      { weeks: 0, content: '초기 측정', highlightClass: null },
       { weeks: 4, content: '환자 본인이 주사 맞기', highlightClass: null },
       { weeks: 16, content: '병원(예약) 방문하기', highlightClass: 'highlight-yellow' },
       { weeks: 28, content: '병원(평가) 방문하기', highlightClass: 'highlight-orange' },
@@ -39,7 +40,7 @@ function getAdjustedDate(date, weeks) {
   
       const row = document.createElement('tr');
       row.innerHTML = `
-        <td>${item.weeks}주 후 (${formattedDate})</td>
+        <td>${item.weeks}주차 (${formattedDate})</td>
         <td>${item.content}</td>
       `;
   
