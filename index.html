@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>인트로 페이지</title>
+  <link rel="stylesheet" href="./css/styles.css">
+  <script defer src="./js/theme.js"></script>
+</head>
+<body class="light-mode">
+  <header>
+    <button id="theme-toggle" class="theme-button">
+      <img id="theme-icon" src="./assets/dark-mode-icon.png" alt="Toggle Theme">
+    </button>
+  </header>
+  <main class="intro">
+    <div class="intro-content">
+      <h1>오늘도 파이팅!!</h1>
+      <img src="./assets/intro.png" alt="Intro Image" class="intro-image">
+    </div>
+  </main>
+  <script>
+    // 인트로 화면 이미지 클릭 시 메인 페이지로 이동
+    document.querySelector('.intro-image').addEventListener('click', () => {
+      window.location.href = 'main.html';
+    });
+  </script>
+</body>
+</html>

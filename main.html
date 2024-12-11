@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>메인 페이지</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script defer src="js/theme.js"></script>
+</head>
+<body class="light-mode">
+  <header>
+    <button id="theme-toggle" class="theme-button">
+      <img id="theme-icon" src="assets/dark-mode-icon.png" alt="Toggle Theme">
+    </button>
+    <div id="date-time" class="date-time"></div>
+  </header>
+  <main>
+    <section class="grid">
+      <!-- 약 데이터 -->
+      <div class="grid-item" onclick="location.href='med1.html'">
+        <img src="./assets/med1.png" alt="약1">
+        <p>약1</p>
+      </div>
+      <div class="grid-item" onclick="location.href='med2.html'">
+        <img src="./assets/med2.png" alt="약2">
+        <p>약2</p>
+      </div>
+      <!-- 6*2 배치를 위한 12개 약 구성 -->
+      <!-- 여기에 추가 약 블록 생성 -->
+    </section>
+  </main>
+  <footer>
+    <a href="#top" class="to-top">
+      <img src="./assets/up-arrow.png" alt="맨 위로">
+    </a>
+  </footer>
+  <script>
+    // 날짜와 시간 갱신
+    setInterval(() => {
+      const now = new Date();
+      document.getElementById('date-time').textContent = now.toLocaleString();
+    }, 1000);
+  </script>
+</body>
+</html>

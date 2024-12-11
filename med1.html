@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>약1 상세 페이지</title>
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/med1.css">
+  <script defer src="./js/table.js"></script>
+  <script defer src="./js/theme.js"></script>
+</head>
+<body class="light-mode">
+  <header>
+    <div class="header-left">
+      <a href="./main.html" class="main-link">메인으로 가기</a>
+    </div>
+    <div class="header-right">
+      <button id="theme-toggle" class="theme-button">
+        <img id="theme-icon" src="./assets/dark-mode-icon.png" alt="Toggle Theme">
+      </button>
+    </div>
+  </header>
+  <main>
+    <section class="med-details">
+      <div class="med-image">
+        <img src="./assets/med1.png" alt="약1 이미지">
+      </div>
+      <div class="med-description">
+        <h2>약1</h2>
+        <p>이 약은 환자의 건강을 위한 기본적인 처방 약입니다.</p>
+      </div>
+    </section>
+    <section>
+      <table class="schedule-table">
+        <thead>
+          <tr>
+            <th>날짜</th>
+            <th>내용</th>
+          </tr>
+        </thead>
+        <tbody id="schedule-body">
+          <!-- 날짜와 내용은 JavaScript로 생성 -->
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="2" class="footer-row">6개월마다 평가를 받아야 함</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+  </main>
+</body>
+</html>
